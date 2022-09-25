@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
     <link rel="shortcut icon" href="css/img/iconoClima.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <h1>
+            <img src="css/img/iconoClima.ico" alt="">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -26,21 +27,23 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>El Clima Ahora</h2>
+        <br>
         <section id="form-city-list">
             <!-- Sección donde se debe colocar el formulario, con el select y el
             botón de consultar -->
             <form action="">
                 <!-- <label for="ciudades"></label> ???????????????????????????????? -->
-                <select name="ciudades" id="ciudades"  required>
+                <select name="ciudades" id="ciudades"  required class="selec_ciud">
                     <option value="" disabled selected>Seleccionar Ciudad</option>
                     <option value="ROSARIO">Rosario</option>
                     <option value="RAFAELA">Rafaela</option>
                 </select>
                 <!-- <label for="boton"></label>  ????????????????????????????????-->
-                <input type="button" value="Consultar" name="boton" id="boton">
+                <input type="button" value="Consultar" name="boton" id="boton" class="consultar">
             </form>
         </section>
-
+        <br>
+        <br>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card">
@@ -53,6 +56,8 @@
                 <p>Presión: 1011P</p>
             </div>
         </section>
+        <br>
+    <br>
     </main>
     <footer>
         <p>
