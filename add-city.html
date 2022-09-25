@@ -27,14 +27,24 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar ciudad</h2>
+        <br>
         <section>
             <form action="">
-                <label for="ciudad">Ingrese la ciudad a agregar:</label>
-                <input type="text" name="ciudad" id="ciudad" required placeholder="Ej: Rosario">
-                <br>
-                <input type="button" value="Agregar">
+                <label for="ciudad">Ingrese la ciudad a agregar:</label><br><br>
+                <input class="ingreso_ciud" type="text" name="ciudad" id="ciudad" required >
+                <br><br>
+                <input type="button" value="Agregar" class="agregar_ciud">
             </form>
         </section>
+        <br><br>
+        <div>
+            <div class="success">Ciudad agregada con exito</div><br>
+
+            <div class="warning">Error: La ciudad ingresada no se encuentra en la APi o se produjo un error al consultar</div><br>
+
+            <div class="error">La ciudad ingresada ya se encuentra almacenada</div>
+        </div>
+        <br><br><br>
     </main>
     <footer>
         <p>

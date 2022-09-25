@@ -33,21 +33,27 @@
             Ciudad en
             cuestión desde la página <a href="index.html">Clima</a>.
         </p>    
+        <br>
         <section>
            <form action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+                <label for="nombre">Nombre:</label><br>
+                <input class="nombre_email" type="text" name="nombre" id="nombre">
+                <br><br>
+                <label for="email">Email:</label><br>
+                <input class="nombre_email" type="email" name="email" id="email">
+                <br><br>
+                Mensaje:<br><textarea class="texto" name="Mensaje"></textarea>
                 <br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <br>
-                Mensaje:<textarea name="Mensaje" rows="15" cols="45"></textarea>
-                <br>
-                <input type="button" value="Limpiar">
-                <input type="button" value="Enviar">
+                <input class="boton" type="button" value="Limpiar">
+                <input class="boton" type="button" value="Enviar">
+                <br><br><br>
            </form>
         </section>
-    </main>
+        <div>
+            <p class="mensaje">Ingrese un <b>Email</b> vàlido</p>
+        </div>
+        <br><br>
+    </main> 
     <footer>
         <p>
             Desarrollado con ♥ - LC2

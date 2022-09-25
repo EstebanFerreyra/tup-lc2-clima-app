@@ -43,6 +43,7 @@ header {
     background: var(--color-theme);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    box-shadow: 0px 3px var(--color-active);
 }
 
 nav>ul {
@@ -51,9 +52,7 @@ nav>ul {
     justify-content: center;
 }
 
-nav li {
-    content: " ";
-}
+nav li {}
 
 nav li a {
     display: block;
@@ -118,6 +117,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--color-theme);
+    box-shadow: 0px -3px var(--color-active);
 }
 
 footer p {
@@ -141,16 +141,17 @@ main p {
 
 .consultar {
     background-color: var(--color-theme);
-    border-radius: 8px;
+    border-radius: 13px;
+    border: none;
     width: 100px;
-    height: 50px;
+    height: 45px;
     color: white;
 }
 
 .selec_ciud {
     border-radius: 8px;
     width: 200px;
-    height: 50px;
+    height: 42px;
     text-align: center;
 }
 
