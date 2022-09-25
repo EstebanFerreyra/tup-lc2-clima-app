@@ -51,7 +51,9 @@ nav>ul {
     justify-content: center;
 }
 
-nav li {}
+nav li {
+    content: " ";
+}
 
 nav li a {
     display: block;
@@ -107,6 +109,19 @@ main section {
     justify-content: space-around;
 }
 
+main section div {
+    display: flex;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 footer {
     position: fixed;
     bottom: 0px;
@@ -159,10 +174,7 @@ main p {
     width: 400px;
     height: 42px;
     color: white;
-    display: table-cell;
     text-align: center;
-    vertical-align: middle;
-    justify-content: center;
 }
 
 
