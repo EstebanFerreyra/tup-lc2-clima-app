@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="shortcut icon" href="css/img/iconoClima.ico" type="image/x-icon">
 </head>
@@ -13,7 +14,7 @@
 <body>
     <header>
         <h1>
-            <img src="css/img/iconoClima.ico" alt="">
+            <img src="css/img/nubes-y-sol.ico" alt="">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -27,16 +28,15 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar ciudad</h2>
-        <br>
         <section>
             <form action="">
-                <label for="ciudad">Ingrese la ciudad a agregar:</label><br><br>
+                <label for="ciudad" style="font-size: 4.8mm;">Ingrese la ciudad a agregar:</label><br><br>
                 <input class="ingreso_ciud" type="text" name="ciudad" id="ciudad" required >
-                <br><br>
+                <br>
                 <input type="button" value="Agregar" class="agregar_ciud">
             </form>
         </section>
-        <br><br>
+        
         <div>
             <div class="success">Ciudad agregada con exito</div><br>
 
@@ -44,7 +44,7 @@
 
             <div class="error">La ciudad ingresada ya se encuentra almacenada</div>
         </div>
-        <br><br><br>
+
     </main>
     <footer>
         <p>
