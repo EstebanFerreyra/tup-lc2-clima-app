@@ -7,7 +7,7 @@ h2 {
 }
 
 main div {
-    margin: 40px;
+    margin: 10px;
 }
 
 nav li.current-page a {
@@ -42,11 +42,8 @@ nav li.current-page a {
     width: 410px;
     height: 46px;
     color: white; 
-    text-align: center;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
 }
 
 .warning {
@@ -56,10 +53,8 @@ nav li.current-page a {
     width: 410px;
     height: 57px;
     color: white;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
 }
 
 .error {
@@ -69,10 +64,15 @@ nav li.current-page a {
     width: 410px;
     height: 46px;
     color: white;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
+}
+    
+.carteles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
