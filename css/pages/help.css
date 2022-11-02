@@ -23,7 +23,7 @@ main div {
     color: white;
     justify-content: center;
     margin: 10px;
-    font-size: 4mm;
+    font-size: 3rm;
     font-weight: 700;
 }
 
@@ -59,6 +59,9 @@ main div {
     font-size: 3.8mm;
 }
 
+b {
+    margin: 5px;
+}
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
     main {

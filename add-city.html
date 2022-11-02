@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="shortcut icon" href="css/img/iconoClima.ico" type="image/x-icon">
+    <script defer src="js/pages/add-city.js"></script>
+    <script defer src="js/common.js"></script>
 </head>
 
 <body>
@@ -33,14 +35,14 @@
                 <label for="ciudad" style="font-size: 4.8mm;">Ingrese la ciudad a agregar:</label><br><br>
                 <input class="ingreso_ciud" type="text" name="ciudad" id="ciudad" required >
                 <br>
-                <input type="button" value="Agregar" class="agregar_ciud">
+                <input type="button" value="Agregar" class="agregar_ciud" onclick="getCity()">
             </form>
         </section>
         
         <div class="carteles">
-            <div class="success">Ciudad agregada con exito</div>
-            <div class="warning">Error: La ciudad ingresada no se encuentra en la APi o se produjo un error al consultar</div>
-            <div class="error">La ciudad ingresada ya se encuentra almacenada</div>
+            <div id="success" style="display: none;">Ciudad agregada con exito</div>
+            <div id="warning" style="display: none;">Error: La ciudad ingresada no se encuentra en la APi o se produjo un error al consultar</div>
+            <div id="error" style="display: none;">La ciudad ingresada ya se encuentra almacenada</div>
         </div>
 
     </main>
