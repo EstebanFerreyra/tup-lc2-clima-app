@@ -38,7 +38,7 @@
         </p>    
         <br>
         <section>
-           <form action="">
+           <form action="" id="form-ayuda">
                 <label for="nombre">Nombre:</label><br>
                 <input class="nombre_email" type="text" name="nombre" id="nombre">
                 <br>
@@ -48,13 +48,13 @@
                 Mensaje:<br><textarea class="texto" name="Mensaje"></textarea>
                 <br>
                 <div>
-                <input class="boton" type="button" value="Limpiar">
-                <input class="boton" type="button" value="Enviar"name="boton" id="boton">
+                    <input class="boton" type="button" value="Limpiar" onclick="clearForm()">
+                    <input class="boton" type="button" value="Enviar" name="boton" id="boton" onclick="send()">
                 </div>
            </form>
         </section>
-        <div>
-            <p class="mensaje">Ingrese un <b>email</b> vàlido</p>
+        <div style="display: none;" id="mensaje">
+            <p>Ingrese un <b>email</b> vàlido</p>
         </div>
     </main> 
     <footer>

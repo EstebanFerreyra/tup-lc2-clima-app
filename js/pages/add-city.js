@@ -9,7 +9,7 @@ function getCitiesFromLocalStorage() {
 }
 
 //localStorage.removeItem("CITIES");
-
+ 
 function addNewCityToLocalStorage(newCity) {
     let cartelError = document.getElementById("error");
     let cartelWarning = document.getElementById("warning");
@@ -29,10 +29,10 @@ function addNewCityToLocalStorage(newCity) {
         cartelError.style.display = "block";
     } else {
         cartelSuccess.style.display = "block";
+        cities.push(newCity);
+        localStorage.setItem("CITIES", JSON.stringify(cities));
     }
 
-    cities.push(newCity);
-    localStorage.setItem("CITIES", JSON.stringify(cities));
 }
 
 function getCity() {

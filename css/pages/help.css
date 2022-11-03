@@ -45,17 +45,20 @@ main div {
     font-size: 4mm;
 }
 
-.mensaje {
-    display: flex;
+#mensaje {
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: 333px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
     background-color: #dc3545;
     border-radius: 15px; 
     border: none;
     width: 400px;
     height: 46px;
     color: white;
-    margin: 30px;
     font-size: 3.8mm;
 }
 

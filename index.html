@@ -33,29 +33,27 @@
         <section id="form-city-list">
             <!-- Sección donde se debe colocar el formulario, con el select y el
             botón de consultar -->
-            <form action="">
+            <form action="" id="form-ciudades">
                 <!-- <label for="ciudades"></label> ???????????????????????????????? -->
-                <select name="ciudades" id="ciudades"  required class="selec_ciud">
+                <select name="ciudades" id="ciudades"  required class="selec_ciud" onclick="vacio()">
                     <option value="" disabled selected>Seleccionar Ciudad</option>
-                    <option value="ROSARIO">Rosario</option>
-                    <option value="RAFAELA">Rafaela</option>
                 </select>
                 <!-- <label for="boton"></label>  ????????????????????????????????-->
-                <input type="button" value="Consultar" name="boton" id="boton" class="consultar">
+                <input type="button" value="Consultar" name="boton" id="boton" class="consultar" onclick="callAPI()">
             </form>
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
-                <h3>Rosario</h3>
+            <div id="card" style="display: none;">
+                <h3 id="city"></h3>
                 <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
-                <p>Temperatura: 25.31°</p>
-                <p>Sensación térmica: 26.65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011P</p>
+                <p id="temperatura"></p>
+                <p id="sensacion"></p>
+                <p id="humedad"></p>
+                <p id="velocidad"></p>
+                <p id="presion"></p>
             </div>
-        </section>
+        </section> 
     </main>
     <footer>
         <p>
