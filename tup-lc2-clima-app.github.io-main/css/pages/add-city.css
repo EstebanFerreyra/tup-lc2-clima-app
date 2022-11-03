@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    margin: 25px;
+}
+
+main div {
+    margin: 10px;
+}
+
+nav li.current-page a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.agregar_ciud {
+    background-color: var(--color-theme);
+    border-radius: 13px; 
+    border: none;
+    width: 115px;
+    height: 43px;
+    color: white;
+    margin: 20px;
+    font-size: 3rm;
+    font-weight: 700;
+}
+
+.ingreso_ciud {
+    border-radius: 8px;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    font-size: 4mm;
+}
+
+#success {
+    background-color: #28a745;
+    border-radius: 15px; 
+    border: none;
+    width: 410px;
+    height: 46px;
+    color: white; 
+    font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
+}
+
+#warning {
+    background-color: #dc3545;
+    border-radius: 15px; 
+    border: none;
+    width: 410px;
+    height: 57px;
+    color: white;
+    font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
+}
+
+#error {
+    background-color: #ffc107;
+    border-radius: 15px; 
+    border: none;
+    width: 410px;
+    height: 46px;
+    color: white;
+    font-size: 3.8mm;
+    padding: 15px 10px 15px 10px;
+}
+    
+.carteles {
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rm;
+}
+
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

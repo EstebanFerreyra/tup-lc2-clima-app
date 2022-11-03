@@ -1,0 +1,79 @@
+nav li.current-page a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main section div {
+    display: flex;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    background-color: var(--color-theme);
+    border-radius: 13px;
+    border: none;
+    width: 115px;
+    height: 43px;
+    color: white;
+    justify-content: center;
+    margin: 10px;
+    font-size: 3rm;
+    font-weight: 700;
+}
+
+.nombre_email {
+    border-radius: 8px;
+    width: 370px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+    font-size: 4mm;
+}
+
+.texto {
+    border-radius: 8px;
+    width: 360px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    font-size: 4mm;
+}
+
+#mensaje {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 333px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #dc3545;
+    border-radius: 15px; 
+    border: none;
+    width: 400px;
+    height: 46px;
+    color: white;
+    font-size: 3.8mm;
+}
+
+b {
+    margin: 5px;
+}
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

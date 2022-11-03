@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    margin: 25px;
+}
+
+option {
+    text-align: left;
+    font-size: 4mm;
+}
+
+select {
+    font-size: 4mm;
+}
+
+nav li.current-page a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#card {
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 320px;
+    margin: 35px;
+}
+
+.consultar {
+    background-color: var(--color-theme);
+    border-radius: 13px;
+    border: none;
+    width: 115px;
+    height: 43px;
+    color: white;
+    font-size: 3rm;
+    font-weight: 700;
+}
+
+.selec_ciud {
+    border-radius: 8px;
+    width: 200px;
+    height: 42px;
+    text-align: center;
+}
+
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
