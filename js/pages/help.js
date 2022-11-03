@@ -13,5 +13,8 @@ function validarEmail(email) {
     expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if ( !expr.test(email) ){
         error.style.display = "block";
+        setInterval(function(){
+            error.style.display = "none";
+        }, 2000);
     }
 }
