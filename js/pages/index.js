@@ -17,17 +17,16 @@ function vacio() {
     }
 }
 
-function agregar(city) {
+for (let city of cities) {
+    add(city);
+}
+
+function add(city) {
     let newOption = document.createElement("option");
     newOption.value = city;
     newOption.innerHTML = city;
     selectCity.appendChild(newOption);
 }
-
-for (let city of cities) {
-    agregar(city);
-}
-
 
 async function callAPI() {
     let nameCity = document.getElementById("ciudades").value;
@@ -43,7 +42,7 @@ async function callAPI() {
         document.getElementById("temperatura").innerHTML = `Temperatura: ${jsonObjet.main.temp}°`;
         document.getElementById("sensacion").innerHTML = `Sensación térmica: ${jsonObjet.main.feels_like}°`;
         document.getElementById("humedad").innerHTML = `Humedad: ${jsonObjet.main.humidity}%`;
-        document.getElementById("velocidad").innerHTML = `Velocidad del viento: ${(jsonObjet.wind.speed * 1.60934).toFixed(3)}Km/h`;
+        document.getElementById("velocidad").innerHTML = `Velocidad del viento: ${(jsonObjet.wind.speed * 3.6).toFixed(1)}Km/h`;
         document.getElementById("presion").innerHTML = `Presión: ${jsonObjet.main.pressure} P`;
     }
 }
